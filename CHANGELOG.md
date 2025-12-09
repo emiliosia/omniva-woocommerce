@@ -1,5 +1,9 @@
 # Changelog
 
+## [Unreleased]
+### Fixed
+- fixed a display issue when a theme or other plugins change the margin value for the slider element in the Omniva plugin settings
+
 ## [1.20.10]
 ### Fixed
 - fixed updating of the list of parcel terminals when changing the delivery country and Omniva parcel terminal delivery method is the only delivery method
