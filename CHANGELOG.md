@@ -3,6 +3,7 @@
 ## [Unreleased]
 ### Fixed
 - fixed a display issue when a theme or other plugins change the margin value for the slider element in the Omniva plugin settings
+- fixed an issue where the delivery method was displayed even when the cart weight did not match any defined weight range
 
 ## [1.20.10]
 ### Fixed
