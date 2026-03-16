@@ -3,6 +3,12 @@
 ## [Unreleased]
 ### Fixed
 - fixed a display issue when a theme or other plugins change the margin value for the slider element in the Omniva plugin settings
+- fixed an issue where the delivery method was displayed even when the cart weight did not match any defined weight range
+- fixed the settings page to avoid design distortion under certain conditions
+
+### Improved
+- changed colors to Omniva orange in the pricing block on the settings page
+- made the shipping method name more distinctive in the pricing block on the settings page
 
 ## [1.20.10]
 ### Fixed
