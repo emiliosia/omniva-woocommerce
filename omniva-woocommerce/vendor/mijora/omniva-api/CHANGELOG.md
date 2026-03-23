@@ -1,3 +1,10 @@
+## [1.3.7]
+- added ability to convert content description to UTF-8
+- improved that large A5 landscape labels would be printed in 2 places on an A4 sheet to avoid text being too small
+
+## [1.3.6]
+- fixed PDF generation of labels to maintain original page orientation and aspect ratio, preventing distortion
+
 ## [1.3.5]
 - added the posibility to specify the required parameter `contentDescription` for international shipments. Usage: `(new Package())->setContentDescription($string)`
 
