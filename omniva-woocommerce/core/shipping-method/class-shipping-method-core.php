@@ -141,11 +141,11 @@ class OmnivaLt_Shipping_Method_Core
 
         if ( $method['fields']['price_type'] ) {
             if ( $method['fields']['price_type'] == 'weight' && $method['fields']['price_by_weight'] ) {
-                $amount = $this->getPriceFromTable($method['fields']['price_by_weight'], $cart_weight, $amount);
+                $amount = $this->getPriceFromTable($method['fields']['price_by_weight'], $cart_weight, '');
                 $meta_data[__('Weight', 'omnivalt')] = $cart_weight;
             }
             if ( $method['fields']['price_type'] == 'amount' && $method['fields']['price_by_amount'] ) {
-                $amount = $this->getPriceFromTable($method['fields']['price_by_amount'], $cart_amount, $amount);
+                $amount = $this->getPriceFromTable($method['fields']['price_by_amount'], $cart_amount, '');
             }
             if ( $method['fields']['price_type'] == 'boxsize' && $method['fields']['price_by_boxsize'] ) {
                 $box = OmnivaLt_Shipmethod_Helper::check_omniva_box_size();

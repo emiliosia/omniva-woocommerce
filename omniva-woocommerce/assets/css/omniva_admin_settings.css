@@ -1,3 +1,7 @@
+:root {
+  --omniva-primary-color: #f60;
+}
+
 .woocommerce div.omniva-title {
     position: relative;
 }
@@ -99,7 +103,7 @@
   margin-bottom: 8px;
 }
 .woocommerce table.omniva-settings .prices_box .block-prices:hover {
-  box-shadow: 0px 0px 2px 1px #2196f3;
+  box-shadow: 0px 0px 2px 1px var(--omniva-primary-color);
 }
 .woocommerce table.omniva-settings .prices_box .disabled:before {
   content: "";
@@ -114,9 +118,70 @@
   box-shadow: 0px 0px 1px 0px #666 inset;
   z-index: 1;
 }
+.woocommerce table.omniva-settings .switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 24px;
+}
+.woocommerce table.omniva-settings .switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.woocommerce table.omniva-settings .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.woocommerce table.omniva-settings .slider:before {
+  position: absolute;
+  content: "";
+  height: 18px;
+  width: 18px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+.woocommerce table.omniva-settings input:checked + .slider {
+  background-color: var(--omniva-primary-color);
+}
+.woocommerce table.omniva-settings input:focus + .slider {
+  box-shadow: 0 0 1px var(--omniva-primary-color);
+}
+.woocommerce table.omniva-settings input:checked + .slider:before {
+  -webkit-transform: translateX(16px);
+  -ms-transform: translateX(16px);
+  transform: translateX(16px);
+}
+.woocommerce table.omniva-settings .slider.round {
+  border-radius: 24px;
+}
+.woocommerce table.omniva-settings .slider.round:before {
+  border-radius: 50%;
+}
 .woocommerce table.omniva-settings .prices_box .block-prices .sec-title {
   margin-bottom: 10px;
   font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.woocommerce table.omniva-settings .prices_box .block-prices .sec-title label {
+  text-transform: uppercase;
+  color: var(--omniva-primary-color);
+}
+.woocommerce table.omniva-settings .prices_box .block-prices.disabled .sec-title label {
+  color: #999;
 }
 .woocommerce table.omniva-settings .prices_box .block-prices .sec-prices {
   position: relative;
@@ -203,60 +268,6 @@
   display: inline-block;
   width: 75%;
 }
-.woocommerce table.omniva-settings .prices_box .switcher {
-  float: right;
-  margin-top: -2px;
-}
-.woocommerce table.omniva-settings .switch {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 24px;
-}
-.woocommerce table.omniva-settings .switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-.woocommerce table.omniva-settings .slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-.woocommerce table.omniva-settings .slider:before {
-  position: absolute;
-  content: "";
-  height: 18px;
-  width: 18px;
-  left: 3px;
-  bottom: 3px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-.woocommerce table.omniva-settings input:checked + .slider {
-  background-color: #2196F3;
-}
-.woocommerce table.omniva-settings input:focus + .slider {
-  box-shadow: 0 0 1px #2196F3;
-}
-.woocommerce table.omniva-settings input:checked + .slider:before {
-  -webkit-transform: translateX(16px);
-  -ms-transform: translateX(16px);
-  transform: translateX(16px);
-}
-.woocommerce table.omniva-settings .slider.round {
-  border-radius: 24px;
-}
-.woocommerce table.omniva-settings .slider.round:before {
-  border-radius: 50%;
-}
 .woocommerce table.omniva-settings .field-custom_label table,
 .woocommerce table.omniva-settings .field-position table {
   width: 100%;
@@ -282,6 +293,7 @@
   z-index: 999;
   margin-bottom: 0;
   right: 20px;
+  left: unset;
   padding: 20px;
   box-shadow: 0 0 1px 1px #333;
 }

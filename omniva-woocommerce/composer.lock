@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "mijora/box-calculator",
-            "version": "1.1.0",
+            "version": "1.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:mijora/box-calculator.git",
-                "reference": "7c40f5e5022aa2c31f4c76c9d8033713a998d7e4"
+                "reference": "1ff8adbd8feaaac973f2b84288b7f3d7db639fca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mijora/box-calculator/zipball/7c40f5e5022aa2c31f4c76c9d8033713a998d7e4",
-                "reference": "7c40f5e5022aa2c31f4c76c9d8033713a998d7e4",
+                "url": "https://api.github.com/repos/mijora/box-calculator/zipball/1ff8adbd8feaaac973f2b84288b7f3d7db639fca",
+                "reference": "1ff8adbd8feaaac973f2b84288b7f3d7db639fca",
                 "shasum": ""
             },
             "type": "library",
@@ -33,6 +33,7 @@
                 {
                     "name": "Marijus K.",
                     "email": "info@markak.lt",
+                    "homepage": "https://markak.lt",
                     "role": "Developer"
                 },
                 {
@@ -43,23 +44,23 @@
             ],
             "description": "Trying to find the closest possible box size to reality",
             "support": {
-                "source": "https://github.com/mijora/box-calculator/tree/v1.1.0",
+                "source": "https://github.com/mijora/box-calculator/tree/v1.1.1",
                 "issues": "https://github.com/mijora/box-calculator/issues"
             },
-            "time": "2025-04-10T11:09:13+00:00"
+            "time": "2026-03-18T09:33:37+00:00"
         },
         {
             "name": "mijora/omniva-api",
-            "version": "1.3.5",
+            "version": "1.3.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/omniva-baltic/omniva-api-lib.git",
-                "reference": "3af024fc9e0a804392f0d84f5642640faf87ed78"
+                "reference": "b9b57f161a36a07364a8557ffe3482f2ed80d5e1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/omniva-baltic/omniva-api-lib/zipball/3af024fc9e0a804392f0d84f5642640faf87ed78",
-                "reference": "3af024fc9e0a804392f0d84f5642640faf87ed78",
+                "url": "https://api.github.com/repos/omniva-baltic/omniva-api-lib/zipball/b9b57f161a36a07364a8557ffe3482f2ed80d5e1",
+                "reference": "b9b57f161a36a07364a8557ffe3482f2ed80d5e1",
                 "shasum": ""
             },
             "require": {
@@ -81,20 +82,27 @@
                 {
                     "name": "Modestas",
                     "email": "modestas.slivinskas@gmail.com",
-                    "role": "Developer"
+                    "role": "Former developer at UAB Mijora"
+                },
+                {
+                    "name": "Marijus K.",
+                    "email": "info@markak.lt",
+                    "homepage": "https://markak.lt",
+                    "role": "Developer at UAB Mijora"
                 },
                 {
                     "name": "UAB Mijora",
                     "email": "info@mijora.lt",
-                    "homepage": "https://mijora.dev"
+                    "homepage": "https://mijora.dev",
+                    "role": "Company / Employer of developers"
                 }
             ],
             "description": "Omniva API wrapper",
             "support": {
                 "issues": "https://github.com/omniva-baltic/omniva-api-lib/issues",
-                "source": "https://github.com/omniva-baltic/omniva-api-lib/tree/v1.3.5"
+                "source": "https://github.com/omniva-baltic/omniva-api-lib/tree/v1.3.7"
             },
-            "time": "2025-08-29T11:15:52+00:00"
+            "time": "2026-03-23T12:23:31+00:00"
         },
         {
             "name": "setasign/fpdf",
@@ -144,27 +152,27 @@
         },
         {
             "name": "setasign/fpdi",
-            "version": "v2.6.4",
+            "version": "v2.6.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Setasign/FPDI.git",
-                "reference": "4b53852fde2734ec6a07e458a085db627c60eada"
+                "reference": "de0cf35911be3e9ea63b48e0f307883b1c7c48ac"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/4b53852fde2734ec6a07e458a085db627c60eada",
-                "reference": "4b53852fde2734ec6a07e458a085db627c60eada",
+                "url": "https://api.github.com/repos/Setasign/FPDI/zipball/de0cf35911be3e9ea63b48e0f307883b1c7c48ac",
+                "reference": "de0cf35911be3e9ea63b48e0f307883b1c7c48ac",
                 "shasum": ""
             },
             "require": {
                 "ext-zlib": "*",
-                "php": "^7.1 || ^8.0"
+                "php": ">=7.2 <=8.5.99999"
             },
             "conflict": {
                 "setasign/tfpdf": "<1.31"
             },
             "require-dev": {
-                "phpunit/phpunit": "^7",
+                "phpunit/phpunit": "^8.5.52",
                 "setasign/fpdf": "~1.8.6",
                 "setasign/tfpdf": "~1.33",
                 "squizlabs/php_codesniffer": "^3.5",
@@ -204,7 +212,7 @@
             ],
             "support": {
                 "issues": "https://github.com/Setasign/FPDI/issues",
-                "source": "https://github.com/Setasign/FPDI/tree/v2.6.4"
+                "source": "https://github.com/Setasign/FPDI/tree/v2.6.6"
             },
             "funding": [
                 {
@@ -212,20 +220,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-08-05T09:57:14+00:00"
+            "time": "2026-03-13T08:38:20+00:00"
         },
         {
             "name": "tecnickcom/tcpdf",
-            "version": "6.10.0",
+            "version": "6.11.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/tecnickcom/TCPDF.git",
-                "reference": "ca5b6de294512145db96bcbc94e61696599c391d"
+                "reference": "e1e2ade18e574e963473f53271591edd8c0033ec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/ca5b6de294512145db96bcbc94e61696599c391d",
-                "reference": "ca5b6de294512145db96bcbc94e61696599c391d",
+                "url": "https://api.github.com/repos/tecnickcom/TCPDF/zipball/e1e2ade18e574e963473f53271591edd8c0033ec",
+                "reference": "e1e2ade18e574e963473f53271591edd8c0033ec",
                 "shasum": ""
             },
             "require": {
@@ -275,7 +283,7 @@
             ],
             "support": {
                 "issues": "https://github.com/tecnickcom/TCPDF/issues",
-                "source": "https://github.com/tecnickcom/TCPDF/tree/6.10.0"
+                "source": "https://github.com/tecnickcom/TCPDF/tree/6.11.2"
             },
             "funding": [
                 {
@@ -283,7 +291,7 @@
                     "type": "custom"
                 }
             ],
-            "time": "2025-05-27T18:02:28+00:00"
+            "time": "2026-03-03T08:58:10+00:00"
         }
     ],
     "packages-dev": [],

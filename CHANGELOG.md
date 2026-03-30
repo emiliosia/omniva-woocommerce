@@ -1,5 +1,21 @@
 # Changelog
 
+## [1.20.11]
+### Fixed
+- fixed a display issue when a theme or other plugins change the margin value for the slider element in the Omniva plugin settings
+- fixed an issue where the delivery method was displayed even when the cart weight did not match any defined weight range
+- fixed the settings page to avoid design distortion under certain conditions
+
+### Improved
+- changed colors to Omniva orange in the pricing block on the settings page
+- made the shipping method name more distinctive in the pricing block on the settings page
+
+### Updated
+- updated box-calculator library to v1.1.1
+- updated Omniva API library to v1.3.7
+- updated FPDI library to v2.6.6
+- updated TCPDF library to v6.11.2
+
 ## [1.20.10]
 ### Fixed
 - fixed updating of the list of parcel terminals when changing the delivery country and Omniva parcel terminal delivery method is the only delivery method
