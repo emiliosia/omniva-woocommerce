@@ -10,3 +10,4 @@
 /omniva-blocks-builder/node_modules/
 /omniva-blocks-builder/build/
 /omniva-blocks-builder/package-lock.json
+.idea
